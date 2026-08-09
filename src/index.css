@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #eef6fc;
+  --color-brand-100: #d5e9f7;
+  --color-brand-200: #aed3ef;
+  --color-brand-300: #7bb8e0;
+  --color-brand-400: #4496cc;
+  --color-brand-500: #2778b0;
+  --color-brand-600: #005696;
+  --color-brand-700: #004578;
+  --color-brand-800: #003a63;
+  --color-brand-900: #002f4f;
+
+  --color-health-50: #effaf0;
+  --color-health-100: #d8f3db;
+  --color-health-400: #66bb6a;
+  --color-health-500: #4caf50;
+  --color-health-600: #3d9141;
+  --color-health-700: #2e7d32;
+
+  --color-accent-400: #ffca28;
+  --color-accent-500: #f9a825;
+  --color-accent-600: #f57f17;
+
+  --color-surface: #f7fafc;
+  --color-ink: #0f2233;
+  --color-muted: #5a6b7c;
+
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    font-family: var(--font-sans);
+    color: var(--color-ink);
+    background: var(--color-surface);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-brand-600);
+    outline-offset: 2px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .page-container {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-pad {
+    @apply py-14 sm:py-16 lg:py-20;
+  }
+
+  .fade-up {
+    animation: fade-up 0.6s ease both;
+  }
+
+  .fade-in {
+    animation: fade-in 0.45s ease both;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .fade-up,
+  .fade-in,
+  .carousel-slide {
+    animation: none !important;
+    transition: none !important;
+  }
+}
