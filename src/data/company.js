@@ -59,7 +59,7 @@ export const aboutContent = {
   intro:
     'M PRIX PHARMA PVT. LTD. is a pharmaceutical company focused on delivering dependable healthcare solutions through quality, professionalism, and a commitment to continuous improvement.',
   vision:
-    'To contribute to a healthier future by building a trusted and responsible pharmaceutical organization.',
+    'Our vision is to become a globally trusted leader in healthcare by delivering innovative, high-quality, and affordable medicines. We aspire to enrich human lives, ensure accessibility to essential treatments, and drive sustainable healthcare progress worldwide.',
   mission:
     'To deliver quality-driven pharmaceutical solutions while building lasting relationships with customers, healthcare professionals, and business partners.',
 }

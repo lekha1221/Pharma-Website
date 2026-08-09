@@ -1,16 +1,17 @@
-import vikash from '../assets/images/leadership/vikash.png'
-import manoj from '../assets/images/leadership/manoj.png'
+import vikashPhoto from '../assets/images/leadership/vikash.png'
+import manojPhoto from '../assets/images/leadership/manoj.png'
 
 /**
  * Leadership profiles.
  * image: null uses initials placeholder (e.g. Pooja Shukla — no photo provided).
+ * Photos: Vikash/Manoj use swapped image files by request.
  */
 export const leadership = [
   {
     id: 'vikash',
     name: 'Vikash Kumar Pandey',
     role: 'Director',
-    image: vikash,
+    image: manojPhoto,
     initials: 'VK',
     bio: [
       "Building India's most trusted healthcare ecosystem",
@@ -23,9 +24,13 @@ export const leadership = [
     id: 'manoj',
     name: 'Manoj Kumar Shukla',
     role: 'Director',
-    image: manoj,
+    image: vikashPhoto,
     initials: 'MS',
-    bio: [],
+    bio: [
+      'Building healthcare solutions that actually help people',
+      'Behind the scenes of running a healthcare company',
+      'Business, Health Tips & My Entrepreneur Journey',
+    ],
   },
   {
     id: 'pooja',

@@ -57,7 +57,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mx-auto grid max-w-5xl grid-cols-1 items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
             {leadership.map((person) => (
               <LeadershipCard
                 key={person.id}
